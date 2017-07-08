@@ -9,15 +9,12 @@ const VideoListItem = ({video,onVideoSelect}) =>{
 				<div className="media-left">
 					<img src={imageUrl} className="media-object"/>
 				</div>
-			</div>
-
-			<div className="media=body">
-				<div className="media-heading">
-					{video.snippet.title}
+				<div className="media-body">
+					<div className="media-heading">{video.snippet.title}</div>
 				</div>
 			</div>
 		</li>
-	)
-}
+	);
+};
 
 export default VideoListItem;
